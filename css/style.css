@@ -36,3 +36,68 @@ body {
 .nav-links li a:hover {
   text-decoration: underline;
 }
+
+.schedule-page {
+  padding: 2rem;
+}
+
+.scheduler {
+  display: grid;
+  grid-template-columns: 150px repeat(24, 1fr);
+  gap: 1px;
+  margin-top: 2rem;
+  background-color: #ccc;
+  border: 1px solid #aaa;
+  font-size: 0.9rem;
+}
+
+.time-row {
+  display: contents;
+}
+
+.aircraft-name-header {
+  background-color: #003366;
+  color: white;
+  padding: 0.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.hour {
+  background-color: #e0e0e0;
+  grid-column: span 24;
+  text-align: center;
+  padding: 0.25rem;
+}
+
+.schedule-row {
+  display: contents;
+}
+
+.aircraft-name {
+  background-color: #f8f8f8;
+  padding: 0.5rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.time-slot {
+  background-color: #e6e6e6;
+  height: 40px;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+}
+
+.reserved {
+  background-color: #bbb;
+  color: white;
+}
+
+.maintenance {
+  background-color: #666;
+  color: white;
+}
