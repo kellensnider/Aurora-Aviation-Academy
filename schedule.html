@@ -3,44 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Schedule | Aurora Aviation Academy</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <title>Aurora Aviation Academy - Schedule</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="nav-brand">Aurora Aviation Academy</div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="schedule.html">Schedule</a></li>
-        <li><a href="instructors.html">Instructors</a></li>
-        <li><a href="aircraft.html">Aircraft</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
 
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="schedule.html">Schedule</a></li>
+      <li><a href="instructors.html">Instructors</a></li>
+      <li><a href="aircraft.html">Aircraft</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
   <main class="schedule-page">
-  <h1>Live Aircraft & Instructor Schedule</h1>
-  <p style="margin-bottom: 1rem;">
-    This calendar shows current bookings for aircraft and instructors. Please contact your instructor or the school to make changes.
-  </p>
+    <h1>Live Aircraft & Instructor Schedule</h1>
+    <p>
+      View the real-time schedule below. Please contact your instructor or Aurora staff to reserve a flight slot.
+    </p>
 
-  <iframe
-    src="https://calendar.google.com/calendar/embed?src=7d934e0c7ed9c6689c7542e96616ce5f0b8fe790c1e6432610b4c256ce2120e7%40group.calendar.google.com&ctz=America%2FLos_Angeles"
-    style="border: 0"
-    width="100%"
-    height="800"
-    frameborder="0"
-    scrolling="no">
-  </iframe>
-</main>
+    <!-- Google Calendar Embed -->
+    <iframe
+      src="https://calendar.google.com/calendar/embed?src=7d934e0c7ed9c6689c7542e96616ce5f0b8fe790c1e6432610b4c256ce2120e7%40group.calendar.google.com&ctz=America%2FLos_Angeles"
+      frameborder="0"
+      scrolling="no"
+      width="100%"
+      height="800">
+    </iframe>
+  </main>
 
-
-  <footer style="text-align: center; padding: 1rem; background-color: #f4f4f4; color: #333;">
-    &copy; 2025 Aurora Aviation Academy. All rights reserved.
-  </footer>
-
-  <script src="js/schedule.js"></script>
 </body>
 </html>
