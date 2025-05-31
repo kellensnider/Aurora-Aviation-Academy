@@ -40,7 +40,6 @@ body {
 .scheduler {
   display: grid;
   grid-template-columns: 150px repeat(19, 1fr);
-  gap: 0;
 }
 
 .aircraft-label {
@@ -58,7 +57,7 @@ body {
   border: none;
 }
 
-.hour-row {
+.hour-header {
   display: grid;
   grid-template-columns: repeat(19, 1fr);
 }
