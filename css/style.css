@@ -37,66 +37,58 @@ body {
   text-decoration: underline;
 }
 
-.schedule-page {
-  padding: 2rem;
-  font-family: sans-serif;
-}
-
 .scheduler {
   display: grid;
   grid-template-columns: 150px repeat(19, 1fr);
-  border: 1px solid #ccc;
+  gap: 0;
 }
 
 .aircraft-label {
-  background-color: #f8f8f8;
+  background-color: #f4f4f4;
   padding: 0.5rem;
   font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: 1px solid #ccc;
-  border-right: 1px solid #ccc;
+  border: 1px solid #ccc;
 }
 
-#hour-header {
-  display: contents;
+.header-label {
+  background-color: #ffffff;
+  border: none;
 }
 
-#hour-header::before {
-  content: "";
+.hour-row {
+  display: grid;
+  grid-template-columns: repeat(19, 1fr);
+}
+
+.hour-label {
+  padding: 0.5rem;
+  text-align: center;
+  background-color: #003366;
+  color: white;
+  border-right: 1px solid #fff;
+  font-size: 0.8rem;
 }
 
 .schedule-row {
-  display: contents;
-}
-
-.hour-blocks {
-  display: contents;
+  display: grid;
+  grid-template-columns: repeat(19, 1fr);
 }
 
 .hour-block {
-  border-left: 1px solid #ccc;
-  border-right: 1px solid #ccc;
-  height: 50px;
+  border: 1px solid #ccc;
   background-color: #eaeaea;
   cursor: pointer;
-  text-align: center;
-  padding-top: 0.5rem;
   font-size: 0.8rem;
+  text-align: center;
+  line-height: 50px;
+  height: 50px;
   user-select: none;
 }
 
 .hour-block.reserved {
   background-color: #888;
   color: white;
-}
-
-#hour-header .hour-label {
-  padding: 0.5rem;
-  text-align: center;
-  font-size: 0.8rem;
-  background-color: #003366;
-  color: white;
-  border-right: 1px solid #fff;
 }

@@ -21,28 +21,22 @@
   </header>
 
   <main class="schedule-page">
-    <h1>Schedule for Saturday, May 31, 2025</h1>
+  <h1>Schedule for Saturday, May 31, 2025</h1>
 
-    <!-- Hour header row -->
-    <div class="scheduler">
-      <div class="aircraft-label"></div>
-      <!-- Hours: 05 to 23 -->
-      <!-- JS generates 19 columns -->
-      <div id="hour-header"></div>
+  <div class="scheduler">
+    <!-- Top row: empty spacer for label column, then hour headers -->
+    <div class="aircraft-label header-label">Aircraft</div>
+    <div class="hour-row" id="hour-header"></div>
 
-      <!-- N5274V Row -->
-      <div class="schedule-row">
-        <div class="aircraft-label">N5274V</div>
-        <div class="hour-blocks" data-aircraft="N5274V"></div>
-      </div>
+    <!-- Row for each aircraft: label on left, then hourly blocks -->
+    <div class="aircraft-label">N5274V</div>
+    <div class="schedule-row" data-aircraft="N5274V"></div>
 
-      <!-- N787LF Row -->
-      <div class="schedule-row">
-        <div class="aircraft-label">N787LF</div>
-        <div class="hour-blocks" data-aircraft="N787LF"></div>
-      </div>
-    </div>
-  </main>
+    <div class="aircraft-label">N787LF</div>
+    <div class="schedule-row" data-aircraft="N787LF"></div>
+  </div>
+</main>
+
 
   <footer style="text-align: center; padding: 1rem; background-color: #f4f4f4; color: #333;">
     &copy; 2025 Aurora Aviation Academy. All rights reserved.
