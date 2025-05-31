@@ -39,65 +39,64 @@ body {
 
 .schedule-page {
   padding: 2rem;
+  font-family: sans-serif;
 }
 
 .scheduler {
   display: grid;
-  grid-template-columns: 150px repeat(24, 1fr);
-  gap: 1px;
-  margin-top: 2rem;
-  background-color: #ccc;
-  border: 1px solid #aaa;
-  font-size: 0.9rem;
+  grid-template-columns: 150px repeat(19, 1fr);
+  border: 1px solid #ccc;
 }
 
-.time-row {
+.aircraft-label {
+  background-color: #f8f8f8;
+  padding: 0.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+#hour-header {
   display: contents;
 }
 
-.aircraft-name-header {
-  background-color: #003366;
-  color: white;
-  padding: 0.5rem;
-  font-weight: bold;
-  text-align: center;
-}
-
-.hour {
-  background-color: #e0e0e0;
-  grid-column: span 24;
-  text-align: center;
-  padding: 0.25rem;
+#hour-header::before {
+  content: "";
 }
 
 .schedule-row {
   display: contents;
 }
 
-.aircraft-name {
-  background-color: #f8f8f8;
-  padding: 0.5rem;
-  text-align: center;
-  font-weight: 600;
+.hour-blocks {
+  display: contents;
 }
 
-.time-slot {
-  background-color: #e6e6e6;
-  height: 40px;
+.hour-block {
   border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 50px;
+  background-color: #eaeaea;
+  cursor: pointer;
+  text-align: center;
+  padding-top: 0.5rem;
   font-size: 0.8rem;
+  user-select: none;
 }
 
-.reserved {
-  background-color: #bbb;
+.hour-block.reserved {
+  background-color: #888;
   color: white;
 }
 
-.maintenance {
-  background-color: #666;
+#hour-header .hour-label {
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 0.8rem;
+  background-color: #003366;
   color: white;
+  border-right: 1px solid #fff;
 }

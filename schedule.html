@@ -7,8 +7,6 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-
-  <!-- Navigation Bar -->
   <header>
     <nav class="navbar">
       <div class="nav-brand">Aurora Aviation Academy</div>
@@ -22,41 +20,26 @@
     </nav>
   </header>
 
-  <!-- Main Content -->
   <main class="schedule-page">
     <h1>Schedule for Saturday, May 31, 2025</h1>
 
+    <!-- Hour header row -->
     <div class="scheduler">
-      <div class="time-row">
-        <div class="aircraft-name-header">Aircraft</div>
-        <!-- Hours 00 to 23 -->
-        <div class="hour" style="grid-column: span 24;">00 → 24</div>
+      <div class="aircraft-label"></div>
+      <!-- Hours: 05 to 23 -->
+      <!-- JS generates 19 columns -->
+      <div id="hour-header"></div>
+
+      <!-- N5274V Row -->
+      <div class="schedule-row">
+        <div class="aircraft-label">N5274V</div>
+        <div class="hour-blocks" data-aircraft="N5274V"></div>
       </div>
 
-      <!-- Aircraft Row: N5274Y -->
+      <!-- N787LF Row -->
       <div class="schedule-row">
-        <div class="aircraft-name">N5274Y</div>
-        <div class="time-slot reserved" style="grid-column: 7 / 12;">Reserved</div>
-      </div>
-
-      <!-- Aircraft Row: N787LF -->
-      <div class="schedule-row">
-        <div class="aircraft-name">N787LF</div>
-        <div class="time-slot reserved" style="grid-column: 9 / 11;">Reserved</div>
-      </div>
-
-      <!-- Aircraft Row: N738SP -->
-      <div class="schedule-row">
-        <div class="aircraft-name">N738SP</div>
-        <div class="time-slot reserved" style="grid-column: 12 / 14;">Reserved</div>
-        <div class="time-slot reserved" style="grid-column: 15 / 16;">Reserved</div>
-        <div class="time-slot reserved" style="grid-column: 17 / 18;">Reserved</div>
-      </div>
-
-      <!-- Aircraft Row: N5290E (Maintenance) -->
-      <div class="schedule-row">
-        <div class="aircraft-name">N5290E</div>
-        <div class="time-slot maintenance" style="grid-column: 1 / 25;">Scheduled Maintenance</div>
+        <div class="aircraft-label">N787LF</div>
+        <div class="hour-blocks" data-aircraft="N787LF"></div>
       </div>
     </div>
   </main>
@@ -65,5 +48,6 @@
     &copy; 2025 Aurora Aviation Academy. All rights reserved.
   </footer>
 
+  <script src="js/schedule.js"></script>
 </body>
 </html>
